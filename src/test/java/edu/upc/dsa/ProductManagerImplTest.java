@@ -117,21 +117,21 @@ public class ProductManagerImplTest {
         processOrderTest();
 
         List<Producto> products = this.pm.productsBySales();
-        Assert.assertEquals("A003", products.get(0).getIdProducto());
-        Assert.assertEquals("Croissant", products.get(0).getNombreProducto());
-        Assert.assertEquals(0, products.get(0).getNumVentas());
+        Assert.assertEquals("B001", products.get(0).getIdProducto());
+        Assert.assertEquals("Coca cola", products.get(0).getNombreProducto());
+        Assert.assertEquals(7, products.get(0).getNumVentas());
 
-        Assert.assertEquals("C002", products.get(1).getIdProducto());
-        Assert.assertEquals("Café amb gel", products.get(1).getNombreProducto());
-        Assert.assertEquals(2, products.get(1).getNumVentas());
+        Assert.assertEquals("A002", products.get(1).getIdProducto());
+        Assert.assertEquals("Donut", products.get(1).getNombreProducto());
+        Assert.assertEquals(5, products.get(1).getNumVentas());
 
-        Assert.assertEquals("A002", products.get(2).getIdProducto());
-        Assert.assertEquals("Donut", products.get(2).getNombreProducto());
-        Assert.assertEquals(5, products.get(2).getNumVentas());
+        Assert.assertEquals("C002", products.get(2).getIdProducto());
+        Assert.assertEquals("Café amb gel", products.get(2).getNombreProducto());
+        Assert.assertEquals(2, products.get(2).getNumVentas());
 
-        Assert.assertEquals("B001", products.get(3).getIdProducto());
-        Assert.assertEquals("Coca cola", products.get(3).getNombreProducto());
-        Assert.assertEquals(7, products.get(3).getNumVentas());
+        Assert.assertEquals("A003", products.get(3).getIdProducto());
+        Assert.assertEquals("Croissant", products.get(3).getNombreProducto());
+        Assert.assertEquals(0, products.get(3).getNumVentas());
     }
 
     @Test
